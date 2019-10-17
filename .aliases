@@ -17,7 +17,7 @@ function sk() {
     then
         ssh-add
     else
-        eval `ssh-agent -s`
+        eval $(ssh-agent -s)
         ssh-add
     fi
 }
