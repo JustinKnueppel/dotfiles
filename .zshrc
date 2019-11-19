@@ -7,9 +7,6 @@ plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
-export VISUAL=/usr/bin/vim
-export EDITOR=$VISUAL
-
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi

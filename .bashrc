@@ -92,9 +92,6 @@ fi
 unset use_color safe_term match_lhs sh
 # END DEFAULTS
 
-export VISUAL=/usr/bin/vim
-export EDITOR=$VISUAL
-
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
