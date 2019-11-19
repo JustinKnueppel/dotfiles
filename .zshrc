@@ -1,11 +1,11 @@
-# Path to your oh-my-zsh installation.
-export ZSH="/home/justin/.oh-my-zsh"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
-ZSH_THEME="pure"
-
-plugins=(git z)
-
-source $ZSH/oh-my-zsh.sh
+if [ -f ~/.profile ]; then
+    source ~/.profile
+fi
 
 if [ -f ~/.aliases ]; then
     source ~/.aliases
