@@ -8,7 +8,7 @@ for FILE in $(ls -pA | grep -v / | grep "^\.")
 do
     if [ -f ~/"$FILE" ]; then
         mv ~/"$FILE" ./Backups/"$FILE"
-        ln -s ./"$FILE" ~/"$FILE"
     fi
+    ln -s "$(pwd)/$FILE" ~/"$FILE"
 done
 
