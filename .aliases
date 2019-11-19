@@ -9,8 +9,9 @@ alias xampp='sudo /opt/lampp/manager-linux-x64.run'
 alias note='$EDITOR "$(date +'%Y-%m-%d').txt"'
 
 alias c='xclip -selection clipboard'
-alias v='xclip  -selection clipboard -o'
+alias v='xclip -selection clipboard -o'
 
+# Check if ssh agent is running, and prompt to add ssh key to ring
 function sk() {
     if ps -p $SSH_AGENT_PID &> /dev/null
     then
