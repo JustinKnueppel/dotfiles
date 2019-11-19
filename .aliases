@@ -11,6 +11,8 @@ alias note='$EDITOR "$(date +'%Y-%m-%d').txt"'
 alias c='xclip -selection clipboard'
 alias v='xclip -selection clipboard -o'
 
+alias media="sudo mount -t cifs -o user=justin //192.168.1.22/share ~/Media"
+
 # Check if ssh agent is running, and prompt to add ssh key to ring
 function sk() {
     if ps -p $SSH_AGENT_PID &> /dev/null
