@@ -1,0 +1,21 @@
+export VISUAL=vim
+export EDITOR=$VISUAL
+
+# Change directory colors to purple
+LS_COLORS=$LS_COLORS:'di=0;95:'
+export LS_COLORS
+
+# Rust
+# export PATH=$PATH:/home/justin/.cargo/bin
+
+# Ruby
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+
+# Golang
+# export PATH = $PATH:/usr/local/go/bin
+# export GOPATH=/home/justin/Coding/go
+
+# NVM
+# source /usr/share/nvm/init-nvm.sh
+

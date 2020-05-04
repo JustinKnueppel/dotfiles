@@ -1,11 +1,14 @@
-alias ug=~/Coding/Git-Utilities/UpdateGitRepos.sh
-alias ugl=~/Coding/Git-Utilities/UpdateGitList.sh
+# Git utilities
+# alias ug=~/Coding/Git-Utilities/UpdateGitRepos.sh
+# alias ugl=~/Coding/Git-Utilities/UpdateGitList.sh
 
-alias general='source ~/venv/general/bin/activate'
+alias general='source ~/env/bin/activate'
 
 alias osuvpn='ssh knueppel.2@stdlinux.cse.ohio-state.edu'
 
-alias xampp='sudo /opt/lampp/manager-linux-x64.run'
+# Xampp
+# alias xampp='sudo /opt/lampp/manager-linux-x64.run'
+
 alias note='$EDITOR "$(date +'%Y-%m-%d').txt"'
 
 alias c='xclip -selection clipboard'

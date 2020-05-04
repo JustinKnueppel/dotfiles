@@ -1,14 +1,16 @@
 #!/usr/bin/bash
 
-if [ ! -d ./Backups ]; then
-    mkdir Backups
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+if [ ! -d "$DIR/backups" ]; then
+    mkdir "$DIR/backups"
 fi
 
-for FILE in $(ls -pA | grep -v / | grep "^\.")
+for FILE in $(ls -A "$DIR/files")
 do
-    if [ -f ~/"$FILE" ]; then
-        mv ~/"$FILE" ./Backups/"$FILE"
+    if [ -f ~/".$FILE" ]; then
+        mv ~/".$FILE" "$DIR/backups/$FILE"
     fi
-    ln -s "$(pwd)/$FILE" ~/"$FILE"
+    ln -s "$DIR/files/$FILE" ~/".$FILE"
 done
 
