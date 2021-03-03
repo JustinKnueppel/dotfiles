@@ -50,3 +50,13 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+alias gp='git push'
+alias gpum='git pull upstream main'
+gcob() {
+    git checkout -b $1
+}
+gcm() {
+    git add . && git commit -m "$1"
+}
+
