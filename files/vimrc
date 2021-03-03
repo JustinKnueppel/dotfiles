@@ -72,7 +72,6 @@ map <leader><space> :let @/=''<cr> " clear search
 
 " Change escape
 inoremap jk <esc>
-inoremap <esc> <nop>
 
 " Change forward and back
 nnoremap E $
@@ -85,3 +84,7 @@ set lazyredraw
 
 " Stop visual and audio bell
 set vb t_vb=
+
+" Allow backspace over lines
+set backspace=indent,eol,start
+
