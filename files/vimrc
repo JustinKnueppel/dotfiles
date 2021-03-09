@@ -23,6 +23,9 @@ Plugin 'w0rp/ale'
 " Git next to line numbers
 Plugin 'airblade/vim-gitgutter'
 
+" Amp style jumps
+Plugin 'easymotion/vim-easymotion'
+
 " All Plugins loaded before this point
 call vundle#end()
 
@@ -78,6 +81,23 @@ nnoremap E $
 nnoremap B ^
 nnoremap $ <nop>
 nnoremap ^ <nop>
+
+" Easymotion configuration
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere
+nmap <leader>f <Plug>(easymotion-jumptoanywhere)
+
+" Override default jump anywhere to only do beginning of word
+let g:EasyMotion_re_anywhere = '\v' .
+    \ '(<.|^$)'
+
+" Case insensitive jumps
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
 
 " Only redraw screen when needed
 set lazyredraw
