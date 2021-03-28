@@ -53,6 +53,7 @@ ex ()
 
 alias gp='git push'
 alias gpum='git pull upstream main'
+alais gcom='git checkout main'
 gcob() {
     git checkout -b $1
 }
