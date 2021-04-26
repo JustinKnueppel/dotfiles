@@ -1,0 +1,17 @@
+tab_width: 2
+soft_tab: true
+line_wrapping: true
+
+types:
+  py:
+    tab_width: 4
+
+open_mode:
+  exclusions:
+    - "**/.git"
+    - "**/node_modules"
+    - "**/__pycache__"
+
+keymap:
+  insert:
+    jk: application::switch_to_normal_mode
