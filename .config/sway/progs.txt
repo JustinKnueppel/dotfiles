@@ -1,0 +1,10 @@
+grim
+slurp
+redshift
+mako
+libinput-gestures
+playerctl
+light
+swayidle
+waybar
+fzf
