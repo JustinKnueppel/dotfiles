@@ -15,7 +15,7 @@ export EXA_COLORS="di=35"
 # eval "$(rbenv init -)"
 
 # Golang
-# export PATH = $PATH:/usr/local/go/bin
+# export PATH=$PATH:/usr/local/go/bin
 # export GOPATH=/home/justin/Coding/go
 
 # NVM
