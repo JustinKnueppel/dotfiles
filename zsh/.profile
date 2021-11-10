@@ -18,10 +18,6 @@ export EXA_COLORS="di=35"
 # export PATH=$PATH:/usr/local/go/bin
 # export GOPATH=/home/justin/Coding/go
 
-# NVM
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # Haskell
 # [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
